@@ -10,7 +10,17 @@
 div.container{
     width: 1000px;
 }
+div.s-container{
+    width: 470px;
+}
 
 h1{
     color: $white;
+}
+
+h6{
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-top: 5rem;
 }

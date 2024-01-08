@@ -36,7 +36,10 @@ export default{
 
         <!-- lower header con text centrato  -->
         <section class="lower-header">
-
+            <div class="s-container mx-auto">
+                <h6> avada forum is the place to be</h6>
+                <p>In quis lectus sed leo elementum faucibus in dapibus dictum. Nulla molestie tortor nec lectus venenatis, sed blandit dui finibus. dolor at, bibendum purus. Dones vehicula nec tortor ac finibus. </p>
+            </div>
         </section>
             
         </header>
@@ -50,15 +53,12 @@ export default{
 header{
     section.upper-header{
         background-color: $bluette;
+        img{
+            padding: 1rem;
+            width: 13rem;;
+        }
     }
-    h1{
-        font-size: 7rem;
-        font-weight: bolder;
-    }
-    img{
-        padding: 1rem;
-        width: 13rem;;
-    }
+    
     section.middle-header{
         background-image: url(../assets/img/home_slider_bg.jpg);
         height: 700px;
@@ -67,6 +67,11 @@ header{
             padding-top: 15rem;
             padding-left: 2rem;
         }
+        h1{
+        font-size: 7rem;
+        font-weight: bolder;
+        }
+        
         p{
             color: white;
             padding: 2rem 0;
@@ -81,6 +86,18 @@ header{
             font-weight: bold;
             font-size: smaller;
             padding: 0.5rem 2.5rem;
+        }
+    }
+
+    section.lower-header{
+        background-color: $light-grey;
+        text-align: center;
+        h6{
+            color: rgb(82, 82, 82);
+        }
+        div p{
+            color: $dark-grey;
+            padding: 1rem 0 4rem 0;
         }
     }
 }
