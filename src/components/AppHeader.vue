@@ -5,36 +5,36 @@ export default{
     data() {
         return {
         // arrray contenenti oggetti che utilizzerò nell'header
-        menuHeader : [
-                                {
-                                    id:1,
-                                    link: 'Home'
-                                },
-                                {
-                                    id:2,
-                                    link: 'Apple'
-                                },
-                                {
-                                    id:3,
-                                    link:'Microsoft' 
-                                },
-                                {
-                                    id:4,
-                                    link:'Android' 
-                                },
-                                {
-                                    id:5,
-                                    link:'Forums' 
-                                },
-                                {
-                                    id:6,
-                                    link:'Contact us' 
-                                },
-                                {
-                                    id:7,
-                                    link:'Join us' 
-                                },
-                ]
+        menuHeader: [
+                {
+                    id: 1,
+                    link: 'Home'
+                },
+                {
+                    id: 2,
+                    link: 'Apple'
+                },
+                {
+                    id: 3,
+                    link: 'Microsoft'
+                },
+                {
+                    id: 4,
+                    link: 'Android'
+                },
+                {
+                    id: 5,
+                    link: 'Forums'
+                },
+                {
+                    id: 6,
+                    link: 'Contact us'
+                },
+                {
+                    id: 7,
+                    link: 'Join us'
+                },
+            ]
             }
     },
     components:{
@@ -48,18 +48,14 @@ export default{
         <!-- upper header con logo img e ul -->
         <section class="upper-header">
             <div class="container">
-                <div>
-                    <img src="../assets/img/logo.png" alt="Avada Forum logo">
-                </div>
+                <img src="../assets/img/logo.png" alt="Avada Forum logo">
                 <ul>
                     <!-- ciclo le props per il totale degli oggetti -->
-                    <MenuList v-for="menu in menuHeader"
-                    :linkMenu="menu.link"/>
-                    <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
+                    <MenuList v-for="menu in menuHeader" :linkMenu="menu.link"/>
+                    <i class="fa-solid fa-magnifying-glass-plus"></i>
                 </ul>
             </div>
         </section>
-
         <!-- middle header con text + btn -->
         <section class="middle-header">
             <div class="container">
@@ -68,16 +64,14 @@ export default{
                 <button class="btn btn-primary">get avada now! > </button>
             </div>
         </section>
-
         <!-- lower header con text centrato  -->
         <section class="lower-header">
-            <div class="s-container mx-auto">
+            <div class="s-container ">
                 <h6> avada forum is the place to be</h6>
                 <p>In quis lectus sed leo elementum faucibus in dapibus dictum. Nulla molestie tortor nec lectus venenatis, sed blandit dui finibus. dolor at, bibendum purus. Dones vehicula nec tortor ac finibus. </p>
             </div>
         </section>
-            
-        </header>
+    </header>
 </template> 
 
 <style lang="scss" scoped>
@@ -89,20 +83,22 @@ header{
     section.upper-header{
         background-color: $bluette;
         div.container{
-            @include flex (row, space-between,center)
-        }
-        ul{
-            @include flex (row, center,center);
-            list-style-type: none;
-            color: white;
-        }
-        img{
-            padding: 1rem 0;
-            width: 12rem;
-        }
+            @include flex(row,space-between,center);
+            ul{
+                @include flex(row,center,center);
+    
+                list-style-type: none;
+                color: white;
+            }
+            img{
+                padding: 1rem 0;
+                width: 12rem;
+            }
         i.fa-magnifying-glass{
             font-size: small;
         }
+        }
+
     }
     
     section.middle-header{
@@ -138,9 +134,6 @@ header{
     section.lower-header{
         background-color: $light-grey;
         text-align: center;
-        h6{
-            color: rgb(82, 82, 82);
-        }
         div p{
             color: $dark-grey;
             padding: 1rem 0 4rem 0;
