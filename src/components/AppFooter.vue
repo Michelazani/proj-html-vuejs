@@ -71,28 +71,37 @@ export default{
          3. space between con icons
          4. position per ^ -->
     <footer>
-        <section class="container upper-footer">
+        <section class="container upper-footer d-flex ">
             <div class=" popular-topics">
                 <ul>
                     <!-- ciclo le props per il totale degli oggetti -->
-                    <FooterListMenu v-for="popularTopic in popularTopics" :linkFooter="popularTopic.link"/>
+                    <FooterListMenu v-for="popularTopic in popularTopics" :linkFooter="popularTopic.link" class="border-bottom" />
                 </ul>
             </div>
             <div class="recent-topics">
                 <ul>
                     <!-- ciclo le props per il totale degli oggetti -->
-                    <FooterListMenu v-for="recentTopic in recentTopics" :linkFooter="recentTopic.link"/>
+                    <FooterListMenu v-for="recentTopic in recentTopics" :linkFooter="recentTopic.link" class="border-bottom"/>
                 </ul>
             </div>
             <div class="latest-replies">
                 <ul>
                     <!-- ciclo le props per il totale degli oggetti -->
-                    <FooterListMenu v-for="latestReply in recentTopics" :linkFooter="latestReply.link"/>
+                    <FooterListMenu v-for="latestReply in recentTopics" :linkFooter="latestReply.link" class="border-bottom"/>
                 </ul>
             </div>
         </section>
-        <section class="lower-footer">
-
+        <div class="border"></div>
+        <section class="container lower-footer">
+            <div class="copyright">
+               <p> &#169; Copyright 2012-2020 | Avada Theme by <span class="black">Theme Fusion</span> | All rights reserved | Powered by <span class="black">WordPress</span></p>
+            </div>
+            <div class="icons">
+                <i class="fa-brands fa-facebook" style="color: #3c5998;"></i>
+                <i class="fa-brands fa-square-twitter" style="color: #54acee;"></i>
+                <i class="fa-brands fa-square-instagram" style="color: #3f729b;"></i>
+                <i class="fa-brands fa-square-youtube" style="color: #cd201f;"></i>
+            </div>
         </section>
     </footer>
 </template> 
@@ -101,6 +110,39 @@ export default{
     @use '../style/general.scss' as *;
     @use '../style/partials/mixins' as *;
     @use '../style/partials/variables' as *;
+    footer{
+        section.upper-footer{
+            padding: 4rem 0;
+            ul{
+            @include flex(column,center,start);
+            list-style-type: none;
+            }
+        }
+        .border{
+            border-bottom: 3px solid $light-grey;
+            width: 100%;
+        }
+        .border-bottom{
+            width: 80%;
+        }
+        section.lower-footer{
+            @include flex(row,space-between,center);
+            p{
+                color: rgb(122, 122, 122);
+            }
+            div.copyright p{
+                font-size: 0.8rem;
+            }
+            span.black{
+                color: black;
+            }
+            i{
+                font-size: 2rem;
+                margin: 1rem 0.5rem;
+            }
+        }
 
+    }
+        
    
 </style>
