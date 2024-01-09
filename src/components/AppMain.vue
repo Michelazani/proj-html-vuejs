@@ -154,6 +154,19 @@ export default{
         <article class="black-line">
             <h5>go to our forum <span><i class="fa-solid fa-arrow-right"></i></span> </h5>
         </article>
+        <div class="join-community">
+            <div class="s-container">
+                <h2>Hey! Join to our Community</h2>
+                <p>Nulla molestie tortor nec lectus venenatis, sed blandit dui finibus. Curabitur feugiat vulputate purus ipsums dolores ficilis uns etra.</p>
+                <button class="btn "> sign up > </button>
+            </div>
+
+        </div>
+        <div class="newsletter"> 
+            <div class="s-container">
+                <h3>Suscribe to our newsletter</h3>
+            </div>
+        </div>
     </section>
 
     </main>
@@ -336,6 +349,33 @@ export default{
                 text-transform: inherit;
                 font-size: smaller;
                 }
+            }
+        }
+        div.join-community{
+            background-image: url(../assets/img/join_now_cta_bg.jpg);
+            height: 450px;
+            background-size: 100%;
+            background-position: center;
+            color: white;
+            h2{
+                font-size: 3rem;
+                padding: 7rem 0 1.5rem 0;
+            }
+            button.btn{
+            text-transform: uppercase;
+            background-color: $bluette;
+            border: transparent;
+            border-radius: 0%;
+            padding: 0.3rem;
+            vertical-align: -moz-middle-with-baseline;
+            font-weight: bold;
+            font-size: smaller;
+            padding: 0.5rem 2.5rem;
+            color: white;
+            }
+            p{
+                font-size: 0.8rem;
+                padding-bottom: 1rem;
             }
         }
     }
