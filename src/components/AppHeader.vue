@@ -61,7 +61,7 @@ export default{
             <div class="container">
                 <h1>Tech Forum!</h1>
                 <p>Discuss all the latest technology news and trends</p>
-                <button class="btn btn-primary">get avada now! > </button>
+                <button class="btn btn-primary">get avada now! <span><i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i></span> </button>
             </div>
         </section>
         <!-- lower header con text centrato  -->

@@ -53,7 +53,7 @@ export default{
             <h5>featured article</h5>
             <h3>Cras malesuada et orci eget pharetra</h3>
             <p>In quis lectus sed leo elementum faucibus in dapibus dictum. Nullamolestie tortor nec lectus venenatis, sed blandit dui, dolor at bibendum sadips ets ipsums dolores ficilis uns leo lectus.</p>
-            <button type="button" class="btn btn-dark">read more ></button>
+            <button type="button" class="btn btn-dark">read more  <span><i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i></span></button>
         </div>
         <div class="container images">
             <article>
@@ -158,13 +158,15 @@ export default{
             <div class="s-container">
                 <h2>Hey! Join to our Community</h2>
                 <p>Nulla molestie tortor nec lectus venenatis, sed blandit dui finibus. Curabitur feugiat vulputate purus ipsums dolores ficilis uns etra.</p>
-                <button class="btn "> sign up > </button>
+                <button class="btn "> sign up <span><i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i></span> </button>
             </div>
 
         </div>
         <div class="newsletter"> 
-            <div class="s-container">
-                <h3>Suscribe to our newsletter</h3>
+            <div class="container">
+                <p>Suscribe to our Newsletter</p>
+                <input type="text" name="email" id="email" placeholder="Insert  your email*">
+                <button type="button" class="btn btn-dark"> send</button>
             </div>
         </div>
     </section>
@@ -376,6 +378,26 @@ export default{
             p{
                 font-size: 0.8rem;
                 padding-bottom: 1rem;
+            }
+        }
+        div.newsletter{
+            padding: 3rem 0;
+            background-color: $light-grey;
+            p{
+                color: black;
+                font-size: 1.5rem;
+            }
+            input{
+                width: 400px;
+                border: 0.5px solid lightgray;
+                padding: 0.2rem 0.5rem;
+                margin: 1rem 0 4rem 0;
+            }
+            button{
+                text-transform: uppercase;
+                margin: 0 1rem 0 2rem;
+                padding: 0.3rem 4rem;
+                vertical-align: baseline;
             }
         }
     }
