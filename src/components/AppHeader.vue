@@ -47,12 +47,12 @@ export default{
     <header>
         <!-- upper header con logo img e ul -->
         <section class="upper-header">
-            <div class="container">
+            <div class="container upper-header">
                 <img src="../assets/img/logo.png" alt="Avada Forum logo">
                 <ul>
                     <!-- ciclo le props per il totale degli oggetti -->
                     <MenuList v-for="menu in menuHeader" :linkMenu="menu.link"/>
-                    <i class="fa-solid fa-magnifying-glass-plus"></i>
+                    <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
                 </ul>
             </div>
         </section>
