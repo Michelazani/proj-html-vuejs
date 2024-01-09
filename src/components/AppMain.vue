@@ -19,11 +19,11 @@ export default{
     4.ripeto 2
     5.div diviso in 2 (60-40% ish)
     6. 100% black con text
-    7.div.container, calc/4
+    7.div.container, calc/4 con flex
     8.ripeto 6
     9.bkg-img con text e btn 
     10. input+btn  -->
-        <section>
+    <section>
         <div class="s-container">
             <h6>phasellus eget metus</h6>
             <h2>All the latest news</h2>
@@ -111,7 +111,48 @@ export default{
         </div>
         <article class="black-line">
             <h5>read our blog <span><i class="fa-solid fa-arrow-right"></i></span> </h5>
-
+        </article>
+        <div class=" forum-section">
+            <h6>phasellus eget metus</h6>
+            <h2>Forum Sections</h2>
+            <div class="line-bottom"></div>
+            <div class=" container d-flex flex-row flex-wrap">
+                <article class="sections news d-flex flex-column">
+                    <i class="fa-solid fa-file-lines justify-content-center" style="color: #ffffff;"></i>
+                    <h5><b>News & Community</b></h5>
+                </article>
+                <article class=" sections apple d-flex flex-column">
+                    <i class="fa-brands fa-apple" style="color: #ffffff;"></i>
+                    <h5><b>Apple Forum</b></h5>
+                </article>
+                <article class=" sections mictosoft d-flex flex-column">
+                    <i class="fa-brands fa-windows" style="color: #ffffff;"></i>
+                    <h5><b>Microsoft Forum</b></h5>
+                </article>
+                <article class=" sections android d-flex flex-column">
+                    <i class="fa-brands fa-android" style="color: #ffffff;"></i>
+                    <h5><b>Android Forum</b></h5>
+                </article>
+                <article class=" sections general d-flex flex-column">
+                    <i class="fa-solid fa-mug-saucer" style="color: #ffffff;"></i>
+                    <h5><b>General Discussion</b></h5>
+                </article>
+                <article class=" sections apps d-flex flex-column">
+                    <i class="fa-solid fa-cubes" style="color: #ffffff;"></i>
+                    <h5><b>Apps & Software</b></h5>
+                </article>
+                <article class=" sections gadgets d-flex flex-column">
+                    <i class="fa-solid fa-laptop" style="color: #ffffff;"></i>
+                    <h5><b>Gadget & Stuff</b></h5>
+                </article>
+                <article class=" sections tutorials d-flex flex-column">
+                    <i class="fa-solid fa-wrench" style="color: #ffffff;"></i>
+                    <h5><b>Tutorials & Guides</b></h5>
+                </article>
+            </div>
+        </div>
+        <article class="black-line">
+            <h5>go to our forum <span><i class="fa-solid fa-arrow-right"></i></span> </h5>
         </article>
     </section>
 
@@ -262,6 +303,39 @@ export default{
             h5{
                 font-weight: bold;
                 font-size: small;
+            }
+        }
+        div.forum-section{
+            background-color: $light-grey;
+            padding-bottom: 5rem;
+            i{
+                    background-color: $light-orange;
+                    padding: 1rem;
+                    font-size: 2rem;
+                    border-radius: 50%;
+                    width: 4rem;
+                    margin: 0 auto;
+                }
+                h5{
+                    margin: 1rem 0 2rem 0;
+                }
+            div.line-bottom{
+                left: 45rem;
+                margin-bottom: 2rem;
+            }
+            article.sections{
+                width: calc((100% /4) - 2rem);
+                margin: 1rem;
+                padding: 1.5rem;
+                display: flex;
+                flex-wrap: wrap;
+                background-color: white;
+                border-top: 3px solid $bluette;
+                h5,p{
+                color: black;
+                text-transform: inherit;
+                font-size: smaller;
+                }
             }
         }
     }
