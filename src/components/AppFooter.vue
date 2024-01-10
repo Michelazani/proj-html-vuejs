@@ -109,11 +109,8 @@ export default{
                 <div class="icons">
                     <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
                     <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
-                    <!-- <i class="fa-brands fa-square-twitter" style="color: #54acee;"></i> -->
                     <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
-                    <!-- <i class="fa-brands fa-square-instagram" style="color: #3f729b;"></i> -->
                     <i class="fa-brands fa-youtube" style="color: #ffffff;"></i>
-                    <!-- <i class="fa-brands fa-square-youtube" style="color: #cd201f;"></i> -->
                     <i class="fa-solid fa-chevron-up" style="color: #ffffff;"></i>
                 </div>
             </section>
