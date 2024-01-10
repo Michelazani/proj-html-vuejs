@@ -98,6 +98,12 @@ header{
             font-size: small;
             padding-left: 3.5rem;
         }
+        i.fa-caret-down{
+            position: absolute;
+            top: 3.4rem;
+            left: 26.7rem;
+            font-size: 3rem;
+        }
         }
 
     }

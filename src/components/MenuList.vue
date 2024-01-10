@@ -23,6 +23,18 @@ li{
     padding: 0 1rem;
     font-size: small;
 }
+li:hover:after{
+    content: "";
+    display: block;
+    width: 0;
+	height: 0;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-top: 15px solid $bluette;
+    position: absolute;
+    top: 73px;
+}
+
 li:nth-child(7){
     text-transform: uppercase;
     font-weight: bold;
