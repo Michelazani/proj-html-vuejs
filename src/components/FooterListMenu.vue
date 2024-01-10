@@ -11,8 +11,10 @@ export default{
 
 <template>
     <!-- scrivo la props che ho riportato nel vfor con :(nome props) tra le grafe  -->
-    <li><span><i class="fa-solid fa-chevron-right" style="color: #000000;"></i></span>
-{{ linkFooter }}</li>
+    <li>
+        <span><i class="fa-solid fa-chevron-right" style="color: #000000;"></i></span>
+        {{ linkFooter }}
+    </li>
 </template> 
 
 <style lang="scss" scoped>
