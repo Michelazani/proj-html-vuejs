@@ -107,10 +107,13 @@ export default{
                     <p> &#169; Copyright 2012-2020 | Avada Theme by <span class="black">Theme Fusion</span> | All rights reserved | Powered by <span class="black">WordPress</span></p>
                 </div>
                 <div class="icons">
-                    <i class="fa-brands fa-facebook" style="color: #3c5998;"></i>
-                    <i class="fa-brands fa-square-twitter" style="color: #54acee;"></i>
-                    <i class="fa-brands fa-square-instagram" style="color: #3f729b;"></i>
-                    <i class="fa-brands fa-square-youtube" style="color: #cd201f;"></i>
+                    <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+                    <!-- <i class="fa-brands fa-square-twitter" style="color: #54acee;"></i> -->
+                    <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+                    <!-- <i class="fa-brands fa-square-instagram" style="color: #3f729b;"></i> -->
+                    <i class="fa-brands fa-youtube" style="color: #ffffff;"></i>
+                    <!-- <i class="fa-brands fa-square-youtube" style="color: #cd201f;"></i> -->
                     <i class="fa-solid fa-chevron-up" style="color: #ffffff;"></i>
                 </div>
             </section>
@@ -162,10 +165,25 @@ export default{
                 color: black;
             }
             i{
-                font-size: 2rem;
-                margin: 1rem 0.5rem;
+                font-size: 1rem;
+                margin: 1rem 0.5rem; 
+                border-radius: 50%;  
+                padding: 0.8rem;
+            }
+            i.fa-facebook-f{
+                    background-color: $facebook;
+                }
+            i.fa-twitter{
+                background-color: $twitter;
+            }
+            i.fa-instagram{
+                background-color: $instagram;
+            }
+            i.fa-youtube{
+                background-color: $youtube;
             }
             i.fa-chevron-up{
+                border-radius: 0;
                 background-color: $dark-grey;
                 font-size: 0.5rem;
                 padding: 0.3rem 0.5rem;
