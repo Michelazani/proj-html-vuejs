@@ -203,7 +203,7 @@ export default{
                 padding: 0 0.5rem;
             } 
             h5{
-                font-size: 0.7rem;
+                font-size: 0.9rem;
                 padding-top: 0.5rem;
                 padding-bottom: 0.3rem;
             }

@@ -96,6 +96,7 @@ header{
             }
         i.fa-magnifying-glass{
             font-size: small;
+            padding-left: 3.5rem;
         }
         }
 
