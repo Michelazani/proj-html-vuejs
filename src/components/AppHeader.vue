@@ -103,7 +103,7 @@ header{
     
     section.middle-header{
         background-image: url(../assets/img/home_slider_bg.jpg);
-        height: 700px;
+        height: 685px;
         background-size: contain;
         div{
             padding-top: 15rem;

@@ -21,7 +21,6 @@ span{
     vertical-align: 1px;
 }
 li{
-    padding: 0 1rem;
-    font-size: small;
+    font-size: 0.8rem;
 }
 </style>

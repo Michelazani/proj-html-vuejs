@@ -28,7 +28,7 @@ export default{
                 },
                 {
                     id: 2,
-                    link: 'Proin at ligula sagittis vesyibulum nisisì vitae'
+                    link: 'Proin at ligula sagittis vestibulum nisisì vitae'
                 },
                 {
                     id: 3,
@@ -71,38 +71,50 @@ export default{
          3. space between con icons
          4. position per ^ -->
     <footer>
-        <section class="container upper-footer d-flex ">
-            <div class=" popular-topics">
-                <ul>
-                    <!-- ciclo le props per il totale degli oggetti -->
-                    <FooterListMenu v-for="popularTopic in popularTopics" :linkFooter="popularTopic.link" class="border-bottom" />
-                </ul>
-            </div>
-            <div class="recent-topics">
-                <ul>
-                    <!-- ciclo le props per il totale degli oggetti -->
-                    <FooterListMenu v-for="recentTopic in recentTopics" :linkFooter="recentTopic.link" class="border-bottom"/>
-                </ul>
-            </div>
-            <div class="latest-replies">
-                <ul>
-                    <!-- ciclo le props per il totale degli oggetti -->
-                    <FooterListMenu v-for="latestReply in recentTopics" :linkFooter="latestReply.link" class="border-bottom"/>
-                </ul>
-            </div>
-        </section>
+        <div class="container">
+            <section class=" upper-footer d-flex ">
+                <div class="tech-forum">
+                    <h6>avada tech forum</h6>
+                    <p>Sed semper, nisl id feugiat eleifend, erat est digssim felis, quis auctor elit enim nec ante. Cras ei nibh risus. Pellentesque non mi sit amet mi intermentum.</p>
+                </div>
+                <div class=" popular-topics">
+                    <h6>popular topics</h6>
+                    <ul>
+                        <!-- ciclo le props per il totale degli oggetti -->
+                        <FooterListMenu v-for="popularTopic in popularTopics" :linkFooter="popularTopic.link" class="border-bottom" />
+                    </ul>
+                </div>
+                <div class="recent-topics">
+                    <h6>recent topics</h6>
+                    <ul>
+                        <!-- ciclo le props per il totale degli oggetti -->
+                        <FooterListMenu v-for="recentTopic in recentTopics" :linkFooter="recentTopic.link" class="border-bottom"/>
+                    </ul>
+                </div>
+                <div class="latest-replies">
+                    <h6>latest replies</h6>
+                    <ul>
+                        <!-- ciclo le props per il totale degli oggetti -->
+                        <FooterListMenu v-for="latestReply in recentTopics" :linkFooter="latestReply.link" class="border-bottom"/>
+                    </ul>
+                </div>
+            </section>
+        </div>
         <div class="border"></div>
-        <section class="container lower-footer">
-            <div class="copyright">
-               <p> &#169; Copyright 2012-2020 | Avada Theme by <span class="black">Theme Fusion</span> | All rights reserved | Powered by <span class="black">WordPress</span></p>
-            </div>
-            <div class="icons">
-                <i class="fa-brands fa-facebook" style="color: #3c5998;"></i>
-                <i class="fa-brands fa-square-twitter" style="color: #54acee;"></i>
-                <i class="fa-brands fa-square-instagram" style="color: #3f729b;"></i>
-                <i class="fa-brands fa-square-youtube" style="color: #cd201f;"></i>
-            </div>
-        </section>
+        <div class="container">
+            <section class="container lower-footer">
+                <div class=" copyright">
+                    <p> &#169; Copyright 2012-2020 | Avada Theme by <span class="black">Theme Fusion</span> | All rights reserved | Powered by <span class="black">WordPress</span></p>
+                </div>
+                <div class="icons">
+                    <i class="fa-brands fa-facebook" style="color: #3c5998;"></i>
+                    <i class="fa-brands fa-square-twitter" style="color: #54acee;"></i>
+                    <i class="fa-brands fa-square-instagram" style="color: #3f729b;"></i>
+                    <i class="fa-brands fa-square-youtube" style="color: #cd201f;"></i>
+                    <i class="fa-solid fa-chevron-up" style="color: #ffffff;"></i>
+                </div>
+            </section>
+        </div>
     </footer>
 </template> 
 
@@ -112,26 +124,39 @@ export default{
     @use '../style/partials/variables' as *;
     footer{
         section.upper-footer{
-            padding: 4rem 0;
+            padding: 3rem 0;
             ul{
             @include flex(column,center,start);
             list-style-type: none;
             }
+            }
+            .border-bottom{
+                padding: 0.7rem 0;
+                width: 87%;
+            }
+            h6{
+                color: $black;
+                padding-bottom: 1rem;
+                padding-top: 1rem;
+            }
+            p{
+                color: $dark-grey;
+                padding: 0.7rem 0;
+                font-size: 0.8rem;
+            }
+            div.tech-forum{
+                width: 18rem;
+                padding-right: 1.2rem;
+            }
         }
-        .border{
-            border-bottom: 3px solid $light-grey;
-            width: 100%;
-        }
-        .border-bottom{
-            width: 80%;
-        }
+        
         section.lower-footer{
             @include flex(row,space-between,center);
             p{
                 color: rgb(122, 122, 122);
             }
             div.copyright p{
-                font-size: 0.8rem;
+                font-size: 0.6rem;
             }
             span.black{
                 color: black;
@@ -140,8 +165,18 @@ export default{
                 font-size: 2rem;
                 margin: 1rem 0.5rem;
             }
+            i.fa-chevron-up{
+                background-color: $dark-grey;
+                font-size: 0.5rem;
+                padding: 0.3rem 0.5rem;
+                position: absolute;
+                top: 303rem;
+                right: 5rem;
+            }
         }
-
+        .border{
+            border-bottom: 3px solid $light-grey;
+            width: 100%;
     }
         
    
